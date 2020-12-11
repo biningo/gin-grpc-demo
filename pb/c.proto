@@ -1,0 +1,10 @@
+syntax = "proto3";
+package pb;
+
+message CMsg{
+  string value = 1;
+}
+
+service CService{
+  rpc EchoC(CMsg) returns (CMsg);
+}
